@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://kit.fontawesome.com/3780101a68.js" crossorigin="anonymous"></script>
+
+    <script>
+        if(typeof(Storage)!="undefined"){
+
+        }else{
+            alert("Sem suporte ao Web Storage");
+        }
+
+        function defineCor(op , cor){
+            if(op==1){
+                let main = document.getElementById("main");
+                main.style.backgroundColor = cor;
+            }else{
+                main.style.color = cor;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <h2>VideoTube</h2>
+            <ul>
+                <li><a href="index.html"><i class="far fa-file"></i>Documentação</a></li>
+                <li><a href="museo.html"><i class="fas fa-home"></i>Museo</a></li>
+                <li><a href="usuario.html"><i class="far fa-user"></i>Usuarios</a></li>
+            </ul>
+            <div class="social-media">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="main-content" id="main">
+            <div class="header"> Museo !! </div>
+            <div class="info">
+                <div>
+
+                </div>
+
+
+                <div class="videoContainer" data-src="ASSETS/A MELHOR MÃE DO MUNDO!.mp4"></div>
+                <div class="videoContainer" data-src="./ASSETS/Reindeer - 3723.mp4" ></div>
+                <div class="videoContainer" data-src="./ASSETS/Nebula - 6044.mp4" ></div>
+                <div class="videoContainer" data-src="./ASSETS/Animate - 22182.mp4" ></div>
+
+
+
+
+
+                <script src="JS/script.js"></script>
+
+
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>
